@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(152, 139, 249), rgb(206, 160, 255));
+  color: rgb(0, 0, 106);
+  scroll-behavior: smooth;
+}
+/*HEADER*/
+
+.nav-container {
+  background-color: black;
+  color: blue;
+}
+
+.nav-container ul li a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: blue;
+}
+.nav-container ul li a:hover {
+  color: white;
+
+  text-decoration: underline;
+  transition: 0.5s ease;
+}
+.nav-container ul {
+  list-style-type: none;
+  padding: 30px;
+}
+
+.ul-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolio {
+  margin-right: 700px;
+  font-size: 1.5rem;
+}
+/*audio {
+  margin-left: 300px;
+  margin-top: -40px;
+  color: blue;
+  padding: 15px;
+}*/
+
+.custom-controls {
+  margin-left: 400px;
+  margin-top: -25px;
+}
+.custom-controls button {
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+.custom-controls button:hover {
+  color: white;
+  transition: 0.5s ease;
+}
+
+/*HOME*/
+
+.home-container span {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  color: blue;
+}
+
+.fotoluca {
+  width: 400px;
+  height: 300px;
+  border-radius: 100%;
+  border: 2px solid;
+  object-fit: cover;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 90px;
+  gap: 2rem;
+}
+
+.home-container:hover .fotoluca {
+  transition: 1s ease;
+  width: 425px;
+  height: 325px;
+  border: 5px solid;
+}
+
+.home-container h1 {
+  margin-top: 60px;
+}
+
+.home-container a {
+  text-decoration: none;
+  margin-left: 450px;
+  color: blue;
+  font-size: 2.5rem;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.home-container:hover a {
+  visibility: visible;
+  text-decoration: underline;
+  opacity: 1;
+  transition: 2s ease;
+}
+/* ABOUT*/
+
+.storia-container {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+}
+.storia-container h1 {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.storia-container p {
+  padding: 50px;
+  border: 1px solid;
+  font-style: italic;
+}
+
+/*SKILLS*/
+
+.skills-container img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin: 5px;
+  border: 2px solid;
+  border-radius: 20%;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 5rem;
+
+  padding: 50px;
+  font-size: 1.2rem;
+  margin-left: 100px;
+}
+.skills-container h1,
+p {
+  margin-bottom: 30px;
+}
+
+.skills-container ul {
+  margin-left: 150px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.skills-container ul li:hover {
+  font-size: 1.5rem;
+  transition: 0.5s ease;
+}
+.skills-container h1 {
+  margin-left: 50px;
+}
+
+/* CONTACT */
+
+.contatti-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.contatti-container h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.container {
+  border: 1px solid;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.container a {
+  text-decoration: none;
+  color: blue;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 2px;
+}
+.container p {
+  margin-left: 15px;
+}
+
+.titolo-info {
+  margin-top: 25px;
+  visibility: hidden;
+  opacity: 0;
+}
+.contatti-container:hover .titolo-info {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s ease;
+  font-style: italic;
+}
+/* PROJECTS */
+
+.titolo-container {
+  padding: 50px;
+  font-size: 1.2rem;
+}
+.titolo-container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.progetti-container h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.progetti-container img,
+p,
+ul {
+  margin-left: 60px;
+}
+
+.progetti-container img {
+  width: 600px;
+  margin-left: 325px;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.progetti-container {
+  padding: 50px;
+  font-size: 1.2rem;
+}
+.progetti-container a {
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 10px;
+  color: blue;
+  padding: 1px;
+}
+button {
+  color: blue;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(206, 160, 255);
+  cursor: pointer;
+}
+/*FOOTER*/
+
+footer {
+  background-color: black;
+  color: blue;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
